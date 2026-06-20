@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(248,249,250); /* rgb(15, 20, 25) */
+    margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: rgb(255, 255, 255); /* rgb(25, 30, 37) */
+    border-bottom: 1px solid rgb(229,231,235); /* 35, 43, 53 */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 100px;
+}
+
+#titulo-header-principal {
+    color: black; /* white */
+}
+
+#comentario-titulo {
+    color: rgb(122,128,141);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user {
+    display: flex;
+    gap: 15px;  
+}
+
+#btn-decoracao {
+    border-right: solid 0.5px;
+    border-color: rgb(242, 243, 245); /* 40, 48, 59 */
+}
+
+.bt-tema {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: rgb(255, 255, 255); /* rgb(25, 30, 37); */
+}
+
+.bt-tema img {
+    width: 20px;
+}
+
+.menu-user {
+    background-color: rgb(232, 245, 233); /* 31, 41, 55 */
+    border: none;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(127, 189, 151); /* 19, 152, 112 */
+}
+
+.user img {
+    width: 20px;
+}
+
+.contaiter {
+    display: flex;
+}
+
+.painelbaixo {
+    display: none;
+}
+
+.painelesquerdo {
+    background-color: rgb(255,255,255);  /* rgb(25, 30, 37 */
+    border-right: 1px solid rgb(229,231,235);  /* 35, 43, 53 */
+    width: 280px;
+    min-width: 280px;
+}
+
+.botaoPainel {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    width: 90%;
+    height: 5vh;
+    border-radius: 15px;
+    margin: 5%;
+    color: black; /* white */
+}
+
+#btn-inicio {
+    background-color: #238b50; /* 17, 172, 121 */
+    color: white;
+}
+
+.botaoPainel img {
+    width: 30px;
+    height: 30px;
+}
+
+.paineldireito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248,249,250);   /* 15, 20, 25 */
+    gap: 2%; 
+    min-width: 90vw;
+    margin-top: 30px;
+    padding: 5px;
+
+    /* gambiarra painel esquerdo encostar  na parte inferior */
+    height: 110vh;
+}
+
+.conjunto1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 65vw;
+}
+
+#q1 {
+    background-color: rgba(237, 243, 242); /*15, 37, 35 */
+    border: solid rgba(192, 218, 205) 1px; /*14, 51, 44*/
+    border-radius: 15px;
+    height: 110%;
+    padding: 16px;
+}
+
+#titulo-q1 {
+    color: black; /*white*/
+}
+
+#q1 p{
+    color: rgba(107, 114, 128);
+}
+
+#q2 {
+    background-color: rgba(255, 255, 255); /* 26, 31, 38 */
+    border: solid rgba(242, 243, 245) 1px;/*  41, 48, 60*/
+    border-radius: 15px;
+    height: 110%;
+    padding: 16px;
+}
+
+#input-div {
+    display: flex;
+    border: solid  0.5px rgb(239, 240, 243);/*  41, 48, 60*/
+    border-radius: 10px;
+    background-color: rgb(248, 249, 250); /*15, 20, 25*/
+    padding: 10px;
+    gap: 10px;
+}
+
+#input-q2 {
+    border: none;
+    background-color: rgb(248, 249, 250);
+    width:60vw;
+}
+
+#q2 p{
+    color: rgba(107, 114, 128);
+}
+
+#q2 img{
+    width: 20px;
+}
+
+#q3 {
+    background-color: rgba(242, 243, 245); /*26, 31, 38*/
+    border: solid rgba(242, 243, 245) 1px; /*  41, 48, 60*/
+    border-radius: 15px;
+}
+
+#tabela {
+    border-radius: 15px;
+}
+
+#tabela-prinicipal {
+    display: flex;
+    gap: 500px;
+    background-color: rgb(240, 247, 243); /*25, 41, 44*/
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: black; /*white*/
+}
+#conteudo-principal {
+    display: flex;
+    gap: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+#td1 {
+    color: black; /*white*/
+}
+
+#td2 {
+    color: rgb(91, 97, 107);
+}
+
+#td3 {
+    color: rgb(246, 171, 65); /*190, 135, 16*/
+    background-color: rgb(254, 244, 228); /*51, 45, 34*/
+    border: solid 1px rgb(253, 239, 214); /*80, 62, 31*/
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 700px) {
+    .contaiter {
+        flex-direction: column;
+    }
+
+    .painelesquerdo {
+        display: none;
+    }
+
+    .paineldireito {
+        width: 100vw;
+        height: 160vh;
+    }
+
+    .conjunto1, .conjunto2, .conjunto3 {
+        width: 90vw;
+    }
+}
